@@ -1,0 +1,16 @@
+.lista__item{
+	font-size: 1.25rem;
+	margin: 10px 10px 0px 10px;
+	padding-left: 20px;
+
+}
+
+.lista__item:before {
+	content:"\2713  ";
+	margin-left: -20px;
+}
+
+.lista__item:first-child {
+	color: var(--bold-cor);
+	font-weight: bold;
+}

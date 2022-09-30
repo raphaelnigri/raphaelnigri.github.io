@@ -1,0 +1,111 @@
+.menu-lateral__button{
+	cursor: pointer;
+	position: fixed;
+	top: 4px;
+	right: 2%;
+}
+
+.menu-lateral__content{
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(109.6deg, rgba(83,5,5,1) 11.2%, rgba(0,0,0,1) 91.1% );
+	border-left: 10px solid var(--border-cor);
+	border-bottom: 10px solid var(--border-cor);
+	border-bottom-left-radius: 20px;
+	margin-top: 80px;
+	width: 65vw;
+	height: calc(100vh - 90px);
+	max-height: 390px;
+	overflow-y: auto;
+	position: absolute;
+	right: -100vw;
+	transition: 0.25s ease-in-out;
+}
+
+.menu-lateral__content--ativo{
+	right: 0;
+}
+
+.menu-lateral__item{
+	cursor: pointer;
+	color: var(--header-menu-lateral_item-cor);
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.3em;
+	font-weight: bold;
+	margin: 1em 0px 1em 0px;
+	text-align: center;
+	text-decoration: none;
+	transition: 0.3s;
+	transform-origin: center;
+}
+
+.menu-lateral__item--ativo , .menu-lateral__item:focus , .menu-lateral__item:hover{
+	text-decoration: underline;
+	color: var(--branco);
+}
+
+.menu-lateral__idioma{
+	border-top: 10px solid #AD5050;
+	color: var(--branco);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.3em;
+	font-weight: bold;
+	padding-top: 1em;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+}
+
+.portugues{
+	border: 1px solid white;
+	background: url('../../img/br.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	display: block;
+	margin: 1em auto 1em auto;
+	height: 28px;
+	width: 40px;
+}
+
+.ingles{
+	border: 1px solid white;
+	background: url('../../img/en.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	display: block;
+	margin: 1em auto 1em auto;
+	height: 28px;
+	width: 40px;
+}
+
+.ingles:hover , .portugues:hover {
+	opacity: 1;
+}
+
+.container-icone{
+	border-top: 10px solid #AD5050;
+	display: flex;
+	justify-content: space-between;
+	padding: 1em 12% 1em 12%;
+}
+
+.icone{
+	color: var(--header-menu-lateral_item-cor);
+	cursor: pointer;
+	font-size: 2.5em;
+	text-decoration: none;
+	transition: 0.3s ease-in-out;
+}
+
+.icone:focus , .icone:hover{
+	color: var(--branco);
+}
+
+
+@media screen and (min-width: 645px){
+	.menu-lateral{
+		display: none;
+	}
+}

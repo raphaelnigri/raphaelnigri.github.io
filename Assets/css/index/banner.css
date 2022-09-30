@@ -1,0 +1,78 @@
+.banner{
+	background: url('../../img/banner.jpg') no-repeat center;
+	background-size: 100% 90%;
+	background-position: bottom;
+	border-bottom: 10px solid var(--border-cor);
+	height: 430px;
+	padding-top: 85px;
+	position: relative;
+	width: 100%;
+}
+
+.banner__texto{
+	color: var(--branco);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.6rem;
+	font-weight: bold;
+	padding-top: 85px;
+	position: absolute;
+	left: 5px;
+	top: 30px;
+	width: 50%;
+}
+
+.digitar {
+	font-weight: bold;
+	color: var(--banner_animation-cor);
+}
+
+.cursor {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: var(--banner_cursor-cor);
+    animation: blink 0.7s infinite linear;
+}
+
+@keyframes blink {
+	0% {opacity: 0}
+	49%{opacity: 0}
+	50% {opacity: 1}
+}
+
+@media screen and (max-width: 870px) {
+	
+	.banner{
+		height: 334px;
+	}
+
+	.banner__texto{
+		font-size: 2.125rem;
+	}
+}
+
+@media screen and (max-width: 870px) {
+	
+	.banner{
+		height: 334px;
+	}
+
+	.banner__texto{
+		font-size: 2.125rem;
+	}
+}
+
+@media screen and (max-width: 490px) {
+	
+	.banner{
+		height: 200px;
+	}
+
+	.banner__texto{
+		font-size: 2rem;
+	}
+
+	.digitar{
+	font-weight: bold;
+	color: var(--branco);
+	}	
+}

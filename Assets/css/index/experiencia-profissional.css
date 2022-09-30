@@ -1,0 +1,14 @@
+.experiencia{
+	margin-left: 15px;
+}
+
+.lista__experiencia{
+	font-size: 1.25rem;
+	margin: 20px 10px 0px 0px;
+	padding-left: 35px;
+}
+
+.lista__experiencia:before {
+	margin-left: -20px;
+	content:"\2713  ";
+}

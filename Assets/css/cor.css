@@ -1,0 +1,25 @@
+:root {
+	--branco: #FEFEFE;
+
+	--header-assinatura-cor: #AD0000;
+	--header-assinatura_border-cor: #AD5050;
+	--header-bg-cor: linear-gradient(45deg, #FEFEFE 40% , #ADADAD, black 88%, #AD5050);
+	--header-menu_botao-cor: #AD5050;
+	--header-menu_botao_hover-cor: #CD0000;
+	--header-menu-lateral_bg-cor: #AD0000;
+	--header-menu-lateral_botao-cor: #AD5050;
+	--header-menu-lateral_item-cor: #ADADAD;
+
+	--bold-cor: #AD5050;
+	--border-cor: #AD5050;
+
+	--banner_animation-cor: #AD0000;
+	--banner_cursor-cor: #AD0000;
+	--titulo-cor: #AD5050;
+
+	--footer-bg-cor: #AC3035;
+	--footer-assinatura-cor: #FEFEFE;
+	--footer-texto-cor: #FEFEFE;
+	--footer-icone-cor: #FEFEFE;
+	--footer-icone_hover-cor: #ADADAD;	
+}

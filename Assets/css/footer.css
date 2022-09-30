@@ -1,0 +1,119 @@
+footer {
+	background-color: var(--footer-bg-cor);
+	background-size: 100%;
+	border-top: 10px solid #AD5050;
+	padding-bottom: 15px;
+	margin-top: 60px;
+	transition: 0.5s;
+}
+
+.footer__contato{
+	color: var(--footer-texto-cor);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	font-weight: bold;
+	margin: 20px 0 10px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.footer__link{
+	color: var(--footer-texto-cor);
+	font-weight: normal;
+	position: relative;
+	text-decoration: none;
+}
+
+.footer__link:hover , .footer__link:focus {
+	cursor: pointer;
+}
+
+/*<animation effect> -*/
+	.footer__link::after {
+	background-color: var(--footer-texto-cor);
+	content: '';
+	height: 0.15em;
+	opacity: 0;
+	position: absolute;
+  		bottom: 0;
+  		left: 0;
+	transition: opacity 300ms, transform 300ms;
+	width: 100%;
+	}
+	
+	/*<sublinhado surgindo de cima>*/
+	.footer__link:hover::after,
+	.footer__link:focus::after {
+	opacity: 1;
+	transform: translate3d(0, 0.2em, 0);
+	}
+
+	/*<sublinhado surgindo do meio>*/
+	.footer__contato:nth-child(2) a::after {
+	opacity 1;
+	transform: scale(0);
+	transform-origin: center;
+	}
+
+	.footer__contato:nth-child(2) a:hover::after,
+	.footer__contato:nth-child(2) a:focus::after{
+	transform: scale(1);
+	}
+/*</animation effect>*/
+
+
+.footer__menu__grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	grid-template-areas: "menu";
+	margin-top: 20px;
+}
+
+.footer__menu{
+	grid-column-start: 3;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	width: 145px;
+	justify-self: flex-end;
+	margin-right: 5%;
+}
+
+.footer__assinatura{
+	color: var(--footer-assinatura-cor);
+	font-family: 'Montez', cursive;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	grid-area: menu;
+	grid-column-start: 2;
+	grid-column-end: 2;
+	justify-self: center;
+}
+
+.footer__icone{
+	color: var(--footer-icone-cor);
+	font-size: 2.25rem;
+	text-decoration: none;
+	transition: 0.3s ease-in-out;
+	grid-column-start: 3;
+}
+
+li:first-child .footer__icone{
+	text-decoration: underline;
+}
+
+.footer__icone:hover , .footer__icone:focus {
+	color: var(--footer-icone_hover-cor);
+}
+
+@media screen and (max-width: 680px) {
+
+	.footer__assinatura{
+		grid-column-start: 1;
+		grid-column-end: 1;
+		justify-self: flex-start;
+		margin-left: 5%;
+	}
+}
