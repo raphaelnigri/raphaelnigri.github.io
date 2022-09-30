@@ -29,35 +29,21 @@ footer {
 }
 
 /*<animation effect> -*/
-	.footer__link::after {
+.footer__link::after {
 	background-color: var(--footer-texto-cor);
 	content: '';
 	height: 0.15em;
-	opacity: 0;
 	position: absolute;
   		bottom: 0;
   		left: 0;
+	transform: scale(0);
 	transition: opacity 300ms, transform 300ms;
 	width: 100%;
 	}
 	
-	/*<sublinhado surgindo de cima>*/
-	.footer__link:hover::after,
-	.footer__link:focus::after {
-	opacity: 1;
-	transform: translate3d(0, 0.2em, 0);
-	}
-
-	/*<sublinhado surgindo do meio>*/
-	.footer__contato:nth-child(2) a::after {
-	opacity 1;
-	transform: scale(0);
-	transform-origin: center;
-	}
-
-	.footer__contato:nth-child(2) a:hover::after,
-	.footer__contato:nth-child(2) a:focus::after{
+	.footer__link:hover::after,	.footer__link:focus::after {
 	transform: scale(1);
+	transform-origin: center;
 	}
 /*</animation effect>*/
 
