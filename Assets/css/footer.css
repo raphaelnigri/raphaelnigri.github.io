@@ -48,14 +48,14 @@ footer {
 /*</animation effect>*/
 
 
-.footer__menu__grid{
+.footer__icone__grid{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	align-items: center;
 	margin-top: 20px;
 }
 
-.footer__menu{
+.footer__icone__container{
 	grid-column-start: 3;
 	display: flex;
 	flex-direction: row-reverse;
