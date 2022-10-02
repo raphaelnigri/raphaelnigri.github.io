@@ -50,7 +50,7 @@ footer {
 
 .footer__icone__grid{
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: 1fr 1fr 1fr;
 	align-items: center;
 	margin-top: 20px;
 }
