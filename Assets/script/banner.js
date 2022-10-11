@@ -13,6 +13,7 @@ const erasingDelay = 50;
 const newTextDelay = 1100;
 let palavraIndex = 0;
 let charIndex = 0;
+let array = 0;
 
 detectaIdioma();
 loop();
