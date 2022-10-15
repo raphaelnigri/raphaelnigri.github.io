@@ -24,8 +24,6 @@ em {
 }
 
 h1{
-	clear: left;
-	clear: right;
 	color: var(--titulo-cor);
 	font-family: 'Montserrat', sans-serif;
 	font-size: 2rem;

@@ -1,0 +1,9 @@
+.projetos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.h1--projetos{
+    grid-column: span 3;
+}
