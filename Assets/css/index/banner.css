@@ -1,7 +1,7 @@
 .banner{
 	background: url('../../img/banner.jpg') no-repeat center;
 	background-size: 100% 100%;
-	background-position: cover;
+	background-position: bottom cover;
 	border-bottom: 10px solid var(--border-cor);
 	height: 430px;
 	width: 100%;
