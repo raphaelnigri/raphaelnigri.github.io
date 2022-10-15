@@ -1,21 +1,13 @@
-.tamanho-do-header{
-	margin-top: 90px;
-}
-
 header{
 	background: var(--header-bg-cor);
 	border-bottom: 10px solid var(--border-cor);
+	display: flex;
+	height: 80px;
+	justify-content: space-between;
 	position: fixed;
 	top: 0px;
 	width: 100vw;
 	z-index: 5;
-}
-
-.container{
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	height: 80px;
 }
 
 .assinatura{

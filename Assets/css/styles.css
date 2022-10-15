@@ -4,6 +4,7 @@ body{
 
 main{
 	transition: 0.5s;
+	margin-top: 90px;
 }
 
 section{
@@ -61,7 +62,7 @@ h3 {
 @media screen and (max-width: 581px){
 	
 	section {
-	width: 96%;
+		width: 96%;
 	}
 
 }

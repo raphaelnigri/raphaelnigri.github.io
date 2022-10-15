@@ -1,12 +1,12 @@
 .banner{
 	background: url('../../img/banner.jpg') no-repeat center;
-	background-size: 100% 90%;
-	background-position: bottom;
+	background-size: 100% 100%;
+	background-position: cover;
 	border-bottom: 10px solid var(--border-cor);
 	height: 430px;
-	padding-top: 85px;
-	position: relative;
 	width: 100%;
+	display: flex;
+	align-items: flex-start;
 }
 
 .banner__texto{
@@ -14,11 +14,8 @@
 	font-family: 'Montserrat', sans-serif;
 	font-size: 2.6rem;
 	font-weight: bold;
-	padding-top: 85px;
-	position: absolute;
-	left: 5px;
-	top: 30px;
 	width: 50%;
+	margin-top: 20px;
 }
 
 .digitar {
@@ -42,18 +39,7 @@
 @media screen and (max-width: 870px) {
 	
 	.banner{
-		height: 334px;
-	}
-
-	.banner__texto{
-		font-size: 2.125rem;
-	}
-}
-
-@media screen and (max-width: 870px) {
-	
-	.banner{
-		height: 334px;
+		height: 340px;
 	}
 
 	.banner__texto{
@@ -72,7 +58,7 @@
 	}
 
 	.digitar{
-	font-weight: bold;
-	color: var(--branco);
+		font-weight: bold;
+		color: var(--branco);
 	}	
 }
