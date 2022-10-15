@@ -18,13 +18,13 @@
 	max-height: 390px;
 	overflow-y: auto;
 	position: absolute;
+		top: 0;
 	right: -100vw;
 	transition: 0.25s ease-in-out;
 }
 
 .menu-lateral__content--ativo{
 	right: 0;
-	top: 0;
 }
 
 .menu-lateral__item{
