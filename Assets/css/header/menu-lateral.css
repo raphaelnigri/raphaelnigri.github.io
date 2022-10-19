@@ -81,7 +81,7 @@
 	width: 40px;
 }
 
-.ingles:hover , .portugues:hover {
+.ingles:hover , .ingles:focus , .portugues:hover , .portugues:focus {
 	opacity: 1;
 }
 

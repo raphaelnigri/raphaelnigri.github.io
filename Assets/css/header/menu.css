@@ -64,7 +64,7 @@
 	width: 40px;
 }
 
-.menu__ingles:hover , .menu__portugues:hover{
+.menu__ingles:hover , .menu__ingles:focus , .menu__portugues:hover , .menu__portugues:focus{
 	opacity: 1;
 }
 
