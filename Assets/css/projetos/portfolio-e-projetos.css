@@ -134,17 +134,19 @@
     grid-area: footer;
 }
 
-.section--projetos{
+.projetos__menu{
     margin-top: -36px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     column-gap: 16px;
     padding-left: 4px;
     padding-right: 4px;
+    width: 85%;
+    margin-inline: auto;
 }
 
 @media screen and (min-width: 768px){
-    .section--projetos{
+    .projetos__menu{
         margin-top: -52px;
     }
 }
