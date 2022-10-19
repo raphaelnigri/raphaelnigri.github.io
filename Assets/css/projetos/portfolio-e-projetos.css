@@ -16,6 +16,14 @@
     height: auto;
 }
 
+@media screen and (min-width: 1280px){
+    .apresentacao{
+        background-position: top;
+        background-size: 100% 100%;
+        height: calc(100vh - 140px);
+    }
+}
+
 .apresentacao::before{
     content: "";
     display: block;
@@ -141,23 +149,15 @@
     }
 }
 
-@media screen and (min-width: 1440px){
-	    .apresentacao{
-        background-position: top;
-        background-size: 100% 100%;
-        height: 110vh;
-    }
-}
-
 .h1--projetos{
     color: var(--neon);
     grid-column: span 3;
     font-size: 1.6rem;
     position: relative;
-    animation: neon 1.5s infinite alternate;
     margin-top: 0px;
     padding: 16px 10px 0px 10px;
     z-index: 4;
+    animation: h1__movement 2s forwards , neon 1.5s infinite alternate;
 }
 
 .h1--projetos::after{
@@ -176,6 +176,17 @@
     opacity: 0;
 }
 
+@keyframes h1__movement {
+    0% {
+        opacity: 0;
+        top: 110vh;
+    }
+    100% {
+        opacity: 1;
+        top: 0px;
+    }
+}
+
 @keyframes neon {
     0%, 18%, 22%, 25%, 53%, 57%, 100% {
       text-shadow:
@@ -190,10 +201,20 @@
 }
 
 .h2__container{
+    animation: apear 3s forwards;
     grid-column: span 3;
     display: flex;
     justify-content: space-between;
     z-index: 2;
+}
+
+@keyframes apear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .h2--projetos{
