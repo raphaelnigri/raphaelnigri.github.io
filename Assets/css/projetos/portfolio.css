@@ -1,0 +1,47 @@
+.portfolio{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.cartao{
+    background-color: whitesmoke;
+    padding-bottom: 8px;
+    border-radius: 25px;
+}
+
+.h2--portfolio{
+    border-top: none;
+	border-bottom: 6px solid var(--border-cor);
+    font-size: 1.6rem;
+    margin-bottom: 0px;
+    padding: 8px;
+}
+
+.built{
+    margin-top: 4px;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.legenda{
+    font-size: 1rem;
+}
+
+.h3--destaques{
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.lista__item{
+	font-size: 1rem;
+	margin: 10px 0px 0px 10px;
+	padding-left: 20px;
+}
+
+.lista__item:before {
+	content:"\2713  ";
+	margin-left: -20px;
+    color: var(--bold-cor);
+    font-weight: bold;
+}
+

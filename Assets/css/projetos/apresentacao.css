@@ -1,0 +1,128 @@
+.section--apresentacao{
+    background: black;
+    width: 100%;
+    padding-bottom: 36px;
+    border-bottom: 10px solid var(--border-cor);
+}
+
+.apresentacao{
+    padding-top: 0px;
+    background: url('../../img/Ember_sky.jpg') no-repeat center;
+    background-size: cover;
+    min-height: 586px;
+    height: auto;
+}
+
+@media screen and (min-width: 1280px){
+    .apresentacao{
+        background-position: top;
+        background-size: 100% 100%;
+        height: calc(100vh - 140px);
+    }
+}
+
+.apresentacao::before{
+    animation: moon__movment 1.55s 0.5s forwards , moon__glow 5s 2.2s infinite;
+    content: "";
+    border-radius: 50%;
+    box-shadow: 
+        inset 0 0 0.4em .2em hsl(0 0% 100% / 0.3),
+        inset 0 0 0.8em 0 var(--neon),
+        0 0 0.2em .2em hsl(0 0% 100% / 0.3),
+        0 0 0.4em .2em var(--neon),
+        0 0 1.2em .45em var(--neon);
+    background: url('../../img/moon.jpg') no-repeat center;
+    background-size: cover;
+    display: block;
+    height: 24vh;
+    width: 24vh;
+    max-width: 16em;
+    max-height: 16em;
+    opacity: 0;
+    position: absolute;
+        left: calc(50vw - (24vh / 2));
+    z-index: 2;
+}
+
+.apresentacao::after{
+    animation: meteor 7s 2.2s infinite;
+    content: "";
+    background: linear-gradient(to right, hsl(0 0% 100% / 0.3), var(--neon));
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 5px;
+    width: 50px;
+    position: absolute;
+        top: 420px;
+        left: calc(55vw);
+    opacity: 0;
+    z-index: 3;
+}
+
+.projetos__menu{
+    animation: apear 3s forwards;
+    display: flex;
+    justify-content: space-between;
+    margin: -36px auto 0px auto;
+    padding-left: 4px;
+    padding-right: 4px;
+    width: 85%;
+    z-index: 2;
+}
+
+@media screen and (min-width: 768px){
+    .projetos__menu{
+        margin-top: -52px;
+    }
+}
+
+.apresentacao__menu__item{
+    background: transparent;
+    border: var(--neon) 0.125em solid;
+    border-radius: 0.4em;
+    box-shadow: inset 0 0 0.5em 0 var(--neon), 0 0 0.5em 0 var(--neon);
+    color: var(--neon);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0px auto 30px auto;
+    padding: 0.4em 0.6em;
+    position: relative;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+}
+
+.apresentacao__menu__item::before {
+    background: var(--neon);
+    content: "";
+    filter: blur(1em);
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    pointer-events: none;
+    position: absolute;
+        top: 120%;
+        left: 0;
+    transition: 0.3s;
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+}
+  
+.apresentacao__menu__item:hover,
+.apresentacao__menu__item:focus {
+    background-color: var(--neon);
+    box-shadow: inset 0 0 1.2em 0 var(--neon), 0 0 1.2em 0 var(--neon);
+    color: var(--projeto-bg);
+    text-shadow: none;
+    transition: 0.3s;
+}
+  
+.apresentacao__menu__item:hover::before,
+.apresentacao__menu__item:focus::before {
+    opacity: 1;
+}
+
+@media screen and (min-width: 768px){
+    .apresentacao__menu__item{
+        font-size: 1.5rem;
+    }
+}

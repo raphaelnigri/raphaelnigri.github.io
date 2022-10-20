@@ -38,7 +38,7 @@ h1{
 }
 
 h2{
-	border-top: 10px solid #AD5050;
+	border-top: 10px solid var(--border-cor);
 	color: var(--titulo-cor);
 	font-family: 'Montserrat', sans-serif;
 	font-size: 2rem;

@@ -1,0 +1,80 @@
+@keyframes h1__movement {
+    0% {
+        opacity: 0;
+        top: 110vh;
+    }
+    100% {
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+@keyframes moon__movment{
+    0% {
+        opacity: 0;
+        top: -200px;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    60% {
+        opacity: 0.6;
+    }
+    70% {
+        opacity: 0.65;
+    }
+    80% {
+        opacity: 0.7;
+    }
+    90%{
+        opacity: .8;
+    }
+    95%{
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+        top: 180px;
+    }
+}
+
+@keyframes moon__glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.68;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes meteor {
+    0% {
+       transform: rotate(40deg) translate(-200%, -200%);
+       opacity: 1;
+    }
+    
+    20% {
+      transform: rotate(40deg) translate(100%, 100%);
+      opacity: 0;
+    }
+    100% {
+      transform: rotate(40deg) translate(100%, 100%);
+      opacity: 0;
+    }
+}
+
+@keyframes apear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+

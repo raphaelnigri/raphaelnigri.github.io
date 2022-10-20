@@ -11,7 +11,10 @@
 		<link rel="stylesheet" type="text/css" href="Assets/css/header/menu-lateral.css">
 		<link rel="stylesheet" type="text/css" href="Assets/css/header/svg-botao.css">
 		<link rel="stylesheet" type="text/css" href="Assets/css/footer.css">
-		<link rel="stylesheet" type="text/css" href="Assets/css/projetos/portfolio-e-projetos.css">
+		<link rel="stylesheet" type="text/css" href="Assets/css/projetos/projetos-styles.css">
+		<link rel="stylesheet" type="text/css" href="Assets/css/projetos/projetos-keyframes.css">
+		<link rel="stylesheet" type="text/css" href="Assets/css/projetos/apresentacao.css">
+		<link rel="stylesheet" type="text/css" href="Assets/css/projetos/portfolio.css">
 		<!--Familia de fontes-->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,25 +64,36 @@
 							<li><a class="ingles" href="projetos-en.html" aria-label="traduzir a página para inglês"></a></li>
 						</ul>
 						<ul class="container-icone">
-							<li><a class="icone" aria-label="facebook" href="https://www.facebook.com/raphael.nigri.1" target="_blank" rel="noopener"><i class="fa-brands fa-square-facebook"></i></a></li>
-							<li><a class="icone" aria-label="linkedin" href="https://www.linkedin.com/in/raphael-nigri/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a></li>
+							<li><a class="icone" aria-label="Facebook" href="https://www.facebook.com/raphael.nigri.1" target="_blank" rel="noopener"><i class="fa-brands fa-square-facebook"></i></a></li>
+							<li><a class="icone" aria-label="Linkedin" href="https://www.linkedin.com/in/raphael-nigri/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a></li>
+							<li><a class="icone" aria-label="Github" href="https://github.com/raphaelnigri" target="_blank" rel="noopener"><i class="fa-brands fa-square-github"></i></i></a></li>
 						</ul>
 					</div>
 				</div>	 
 			</nav>
 		</header>
 		<main class="main--projetos">
-			<article class="apresentacao">
-				<h1 class="h1--projetos">Welcome to my Portfolio</h1>
-			</article>
-			<article class="projetos__menu">
-				<div class="h2__container">
-					<button class="h2--projetos">Webpages</button>
-					<button class="h2--projetos">Utilities</button>
-					<button class="h2--projetos">Games</button>
-				</div>
-				<div class="floor"></div>
-			</article>
+			<section class="section--apresentacao">
+				<article class="apresentacao">
+					<h1 class="h1--projetos">Welcome to my Portfolio</h1>
+				</article>
+				<nav class="projetos__menu">
+					<button class="apresentacao__menu__item">Webpages</button>
+					<button class="apresentacao__menu__item">Utilities</button>
+					<button class="apresentacao__menu__item">Games</button>
+				</nav>
+			</section>
+			<section class="portfolio">
+				<article class="cartao cartao--paginas">
+
+				</article>
+				<article class="cartao cartao--utilidades">
+					
+				</article>
+				<article class="cartao cartao--jogos">
+					
+				</article>
+			</section>
 		</main>
 		<footer class="footer--projetos">
 			<address id="address">
@@ -88,9 +102,10 @@
 				<p class="footer__contato"><a href="mailto:link_nigri@hotmail.com" class="footer__link"> Email: link_nigri@hotmail.com</a></p>
 				<article class="footer__icone__grid">
 					<ul class="footer__icone__container">
-						<li><a class="footer__icone" aria-label="voltar ao topo" href="#top"><i class="fa-solid fa-up-right-from-square"></i></a></li>
-						<li><a class="footer__icone" aria-label="facebook" href="https://www.facebook.com/raphael.nigri.1" target="_blank" rel="noopener"><i class="fa-brands fa-square-facebook"></i></a></li>
-						<li><a class="footer__icone" aria-label="linkedin" href="https://www.linkedin.com/in/raphael-nigri/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a></li>
+						<li><a class="footer__icone" aria-label="Voltar ao topo" href="#top"><i class="fa-solid fa-up-right-from-square"></i></a></li>
+						<li><a class="footer__icone" aria-label="Facebook" href="https://www.facebook.com/raphael.nigri.1" target="_blank" rel="noopener"><i class="fa-brands fa-square-facebook"></i></a></li>
+						<li><a class="footer__icone" aria-label="Linkedin" href="https://www.linkedin.com/in/raphael-nigri/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a></li>
+						<li><a class="footer__icone" aria-label="Github" href="https://github.com/raphaelnigri" target="_blank" rel="noopener"><i class="fa-brands fa-square-github"></i></i></a></li>
 					</ul>
 					<div class="footer__assinatura"> Raphael Nigri </div>
 				</article>

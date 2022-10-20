@@ -59,7 +59,7 @@ footer {
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: space-between;
-	width: 145px;
+	width: 150px;
 	justify-self: flex-end;
 	margin-right: 5%;
 }
@@ -78,7 +78,7 @@ footer {
 
 .footer__icone{
 	color: var(--footer-icone-cor);
-	font-size: 2.25rem;
+	font-size: 2rem;
 	text-decoration: none;
 	transition: 0.3s ease-in-out;
 	grid-column-start: 3;
