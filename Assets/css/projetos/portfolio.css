@@ -1,22 +1,23 @@
 .portfolio{
     display: flex;
     flex-wrap: wrap;
+    gap: 16px;
     justify-content: space-between;
+    margin-top: 32px;
+    width: 94%;
 }
 
 .cartao{
-    margin-top: 16px;
     background-color: whitesmoke;
     padding-bottom: 8px;
     border-radius: 25px;
-    max-width: 400px;
+    max-width: 340px;
+    margin-inline: auto;
 }
 
 .h2--portfolio{
-    border-top: none;
 	border-bottom: 6px solid var(--border-cor);
     font-size: 1.6rem;
-    margin-bottom: 0px;
     padding: 8px;
 }
 
@@ -38,6 +39,7 @@
 .destaques{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 12px;
 }
 
 .lista__item{

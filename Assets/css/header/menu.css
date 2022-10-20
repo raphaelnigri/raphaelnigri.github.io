@@ -24,7 +24,7 @@
 	transform: scale(0.90);
 }
 
-.menu__item:hover , .menu__item:focus {
+.menu__item:hover , .menu__item:focus , .menu__item--ativo {
 	background: var(--header-menu_botao_hover-cor);
 	transform: scale(1);
 }
