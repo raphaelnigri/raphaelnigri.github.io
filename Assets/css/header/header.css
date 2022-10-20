@@ -2,6 +2,7 @@ header{
 	background: var(--header-bg-cor);
 	border-bottom: 10px solid var(--border-cor);
 	display: flex;
+	grid-area: header;
 	height: 80px;
 	justify-content: space-between;
 	position: fixed;
