@@ -76,6 +76,7 @@
 }
 
 .h1--projetos::after{
+    animation: meteor 7s 4.2s infinite;
     content: "";
     position: absolute;
     top: 80px;
@@ -86,7 +87,6 @@
     border-top-left-radius: 100%;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
-    animation: meteor 7s 4.2s infinite;
     z-index: 3;
     opacity: 0;
 }
