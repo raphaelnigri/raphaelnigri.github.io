@@ -130,6 +130,7 @@
     padding: 0.4em 0.6em;
     position: relative;
     text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+    outline: none;
 }
 
 .apresentacao__menu__item::before {
