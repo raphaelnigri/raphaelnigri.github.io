@@ -1,5 +1,5 @@
 .section--apresentacao{
-    background: black;
+    background: var(--apresentacao-water);
     width: 100%;
     padding-bottom: 36px;
     border-bottom: 10px solid var(--border-cor);
@@ -98,7 +98,6 @@
         font-size: 2rem;
     }
 }
-
 
 .projetos__menu{
     animation: apear 3s forwards;

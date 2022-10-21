@@ -8,8 +8,8 @@
 }
 
 .cartao{
-    background-color: whitesmoke;
-    padding-bottom: 8px;
+    background-color: var(--cartao-cor);
+    padding-bottom: 16px;
     border-radius: 25px;
     max-width: 340px;
     margin-inline: auto;
@@ -52,7 +52,7 @@
 
 .lista__item:before {
 	content:"\2713  ";
-	margin-left: -20px;
+	margin-left: -1em;
     color: var(--bold-cor);
     font-weight: bold;
 }
@@ -67,7 +67,7 @@
 }
 
 .close > i{
-    background: whitesmoke;
+    background: var(--cartao-cor);
     cursor: pointer;
     color: var(--border-cor);
     font-size: 1.5rem;
@@ -86,22 +86,36 @@
 .cartao__botao{
     cursor: pointer;
     display: block;
-    margin: 4px auto 4px auto;
-    width: 100px;
+    width: 98px;
     text-align: center;
-    padding:0.2rem;
+    padding:0.4em;
+    border:none;
+    border-bottom: 0.2rem solid var(--border-cor);
+    background-color: var(--cartao__botao-cor);
+    color: var(--border-cor);
+    font-size: 0.9rem;
+    box-shadow: -1px 2px 0.25em 0 #666;
+    text-decoration: none;
+    font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
 }
+
+.cartao__botao:hover{
+    color: var(--cartao-cor);
+    background-color: var(--border-cor);
+}
+
 
 .cartao__botao--link{
     position: absolute;
         bottom: 0px;
         left: 0px;
-    margin: 0px 0px 8px 15%;
+    margin: 0px 0px 10px 11%;
 }
 
 .cartao__botao--source{
     position: absolute;
     bottom: 0px;
     right: 0px;
-    margin: 0px 15% 8px 0px;
+    margin: 0px 11% 10px 0px;
 }

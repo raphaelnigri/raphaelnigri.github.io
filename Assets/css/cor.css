@@ -24,5 +24,7 @@
 	--footer-icone_hover-cor: #ADADAD;	
 
 	--neon: rgb(255, 75, 10);
-	--projeto-bg: black
+	--apresentacao-water: black;
+	--cartao-cor: whitesmoke;
+	--cartao__botao-cor: whitesmoke;
 }
