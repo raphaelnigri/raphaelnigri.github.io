@@ -76,13 +76,13 @@
 					<h1 class="h1--projetos">Welcome to my portfolio!</h1>
 				</article>
 				<nav class="projetos__menu">
-					<button class="apresentacao__menu__item">Webpages</button>
-					<button class="apresentacao__menu__item">Utilities</button>
-					<button class="apresentacao__menu__item">Games</button>
+					<label class="apresentacao__menu__item label__pagina apresentacao__menu__item--active">Webpages<input class="input__radio" value="paginas" name="apresentacao__menu__radio" type="radio" checked></label>
+					<label class="apresentacao__menu__item label__utilidade">Utilities<input class="input__radio" value="utilidades" name="apresentacao__menu__radio" type="radio"></label>
+					<label class="apresentacao__menu__item label__jogo">Games<input class="input__radio" value="jogos" name="apresentacao__menu__radio" type="radio"></label>
 				</nav>
 			</section>
 			<section class="portfolio">
-				<article class="cartao cartao--paginas">
+				<article class="cartao webpage">
 					<h2 class="h2--cartao">Nigriflix</h2>
 					<p class="built">Built using Java Script, Css and Html.</p>
 					<p class="legenda">Fully responsive layout of a website's page to display user videos or watch anime and movies.</p>
@@ -99,7 +99,7 @@
 						<a class="cartao__botao cartao__botao--link" aria-label="Webpage" href="https://raphaelnigri.github.io/nigriflix/" target="_blank" rel="noopener">Try it live</a>
 					</ul>
 				</article>
-				<article class="cartao cartao--paginas">
+				<article class="cartao webpage">
 					<h2 class="h2--cartao">Clean Form</h2>
 					<p class="built">Built using Java Script, Regex, Css and Html.</p>
 					<p class="legenda">Fully responsive layout of a companny webpage with a form.</p>
@@ -134,6 +134,7 @@
 				</article>
 			</address>
 		</footer>
-		<script src="Assets/script/menu-lateral.js"> </script>
+		<script src="Assets/script/menu-lateral.js"></script>
+		<script src="Assets/script/menu-projetos.js"></script>
 	</body>
 </html>

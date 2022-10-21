@@ -76,13 +76,13 @@
 					<h1 class="h1--projetos">Bem vindo ao meu portfólio!</h1>
 				</article>
 				<nav class="projetos__menu">
-					<button class="apresentacao__menu__item">Páginas</button>
-					<button class="apresentacao__menu__item">Utilidades</button>
-					<button class="apresentacao__menu__item">Jogos</button>
+					<label class="apresentacao__menu__item label__pagina apresentacao__menu__item--active">Páginas<input class="input__radio" value="paginas" name="apresentacao__menu__radio" type="radio" checked></label>
+					<label class="apresentacao__menu__item label__utilidade">Utilidades<input class="input__radio" value="utilidades" name="apresentacao__menu__radio" type="radio"></label>
+					<label class="apresentacao__menu__item label__jogo">Jogos<input class="input__radio" value="jogos" name="apresentacao__menu__radio" type="radio"></label>
 				</nav>
 			</section>
 			<section class="portfolio">
-				<article class="cartao cartao--paginas">
+				<article class="cartao webpage">
 					<h2 class="h2--cartao">Nigriflix</h2>
 					<p class="built">Construido utilizando Java Script, Css e Html.</p>
 					<p class="legenda">Layout totalmente responsivo da página de um site para exibir videos do usuário ou assistir animes e filmes.</p>
@@ -99,7 +99,7 @@
 						<a class="cartao__botao cartao__botao--link" aria-label="Página" href="https://raphaelnigri.github.io/nigriflix/" target="_blank" rel="noopener">Teste ao vivo</a>
 					</ul>
 				</article>
-				<article class="cartao cartao--paginas">
+				<article class="cartao webpage">
 					<h2 class="h2--cartao">Clean Form</h2>
 					<p class="built">Construido utilizando Java Script, Regex, Css e Html.</p>
 					<p class="legenda">Layout totalmente responsivo de uma página de serviços com formulário.</p>
@@ -134,6 +134,7 @@
 				</article>
 			</address>
 		</footer>
-		<script src="Assets/script/menu-lateral.js"> </script>
+		<script src="Assets/script/menu-lateral.js"></script>
+		<script src="Assets/script/menu-projetos.js"></script>
 	</body>
 </html>
