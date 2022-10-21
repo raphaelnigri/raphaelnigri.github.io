@@ -2,6 +2,7 @@ footer {
 	background-color: var(--footer-bg-cor);
 	background-size: 100%;
 	border-top: 10px solid #AD5050;
+	grid-area: footer;
 	padding-bottom: 15px;
 	transition: 0.5s;
 }
