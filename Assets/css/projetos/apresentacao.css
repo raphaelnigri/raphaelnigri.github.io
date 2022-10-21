@@ -10,14 +10,13 @@
     background: url('../../img/Ember_sky.jpg') no-repeat center;
     background-size: cover;
     min-height: 586px;
-    height: auto;
+    height: calc(100vh - 90px - 36px); /*100vh - header size - section paading*/
 }
 
 @media screen and (min-width: 1280px){
     .apresentacao{
         background-position: top;
         background-size: 100% 100%;
-        height: calc(100vh - 90px - 36px); /*100vh - header size - section paading*/
     }
 }
 
@@ -104,8 +103,6 @@
     display: flex;
     justify-content: space-between;
     margin: -36px auto 0px auto;
-    padding-left: 4px;
-    padding-right: 4px;
     width: 95%;
     z-index: 2;
 }
