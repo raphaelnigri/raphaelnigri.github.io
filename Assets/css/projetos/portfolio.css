@@ -39,11 +39,20 @@
 
 .cartao__imagem{
     grid-row: span 2;
-    background-color: aqua;
     box-shadow: inset 0px 0px 0.4em 0 #666;
     margin-top: 10px;
     margin-left: 8px;
-    min-height: 240px;
+    min-height: 250px;
+}
+
+.cartao__imagem--form{
+    background: url(../../img/contato.png) no-repeat center;
+    background-size: contain;
+}
+
+.cartao__imagem--nigriflix{
+    background: url(../../img/ngriflix.png) no-repeat center;
+    background-size: contain;
 }
 
 .h3--destaques{
