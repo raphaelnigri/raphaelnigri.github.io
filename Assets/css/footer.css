@@ -85,10 +85,6 @@ footer {
 	grid-column-start: 3;
 }
 
-li:first-child .footer__icone{
-	text-decoration: underline;
-}
-
 .footer__icone:hover , .footer__icone:focus {
 	color: var(--footer-icone_hover-cor);
 }
