@@ -81,7 +81,7 @@
 }
 
 .lista__item:before {
-	content:"\2713  ";
+	content:"\2713";
 	margin-left: -1em;
     color: var(--bold-cor);
     font-weight: bold;
