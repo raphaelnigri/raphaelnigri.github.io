@@ -65,7 +65,6 @@
     color: var(--neon);
     font-size: 1.6rem;
     grid-column: span 3;
-    margin-top: 0px;
     padding: 16px 10px 0px 10px;
     position: relative;
     text-shadow:
