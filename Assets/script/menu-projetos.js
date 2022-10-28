@@ -1,12 +1,12 @@
-const labelPagina = document.querySelector('.label__pagina');
-const labelUtilidade = document.querySelector('.label__utilidade');
-const labelJogo = document.querySelector('.label__jogo');
+const labelPagina = document.getElementById('menu__paginas');
+const labelUtilidade = document.getElementById('menu__utilidades');
+const labelJogo = document.getElementById('menu__jogos');
 
 const paginas = document.querySelectorAll('.webpage');
 const utilidades = document.querySelectorAll('.utility');
 const jogos = document.querySelectorAll('.game');
 
-const input = document.querySelectorAll("input[type=radio]");
+const menu__projetos = document.querySelectorAll("input[type=radio]");
 
 function paginasON (){
 	if (paginas[0].classList.contains('off')) {
@@ -71,19 +71,19 @@ function jogosOff(){
     }
 }
 
-for (let i of input){
+for (let i of menu__projetos){
 	i.addEventListener('change', () => {
-		if (input[0].checked){
+		if (menu__projetos[0].checked){
 			paginasON();
 			utilidadeslOff();
 			jogosOff();
 		}
-		if (input[1].checked){
+		if (menu__projetos[1].checked){
 			paginasOff();
 			utilidadeslON();
 			jogosOff();
 		}
-		if (input[2].checked){
+		if (menu__projetos[2].checked){
 			paginasOff();
 			utilidadeslOff();
 			jogosON();
