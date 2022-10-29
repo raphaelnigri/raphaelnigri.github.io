@@ -17,19 +17,22 @@ footer {
 	text-transform: uppercase;
 }
 
-.footer__link{
-	color: var(--footer-texto-cor);
+.footer__contato--link{
+	margin-inline: auto;
+	width: fit-content;
+	display: block;
 	font-weight: normal;
 	position: relative;
 	text-decoration: none;
+	padding-bottom: 0.1em;
 }
 
-.footer__link:hover , .footer__link:focus {
+.footer__contato--link:hover , .footer__contato--link:focus {
 	cursor: pointer;
 }
 
 /*<animation effect> -*/
-.footer__link::after {
+.footer__contato--link::after {
 	background-color: var(--footer-texto-cor);
 	content: '';
 	height: 0.15em;
@@ -41,7 +44,7 @@ footer {
 	width: 100%;
 	}
 	
-	.footer__link:hover::after,	.footer__link:focus::after {
+	.footer__contato--link:hover::after,	.footer__contato--link:focus::after {
 	transform: scale(1);
 	transform-origin: center;
 	}
@@ -81,8 +84,28 @@ footer {
 	color: var(--footer-icone-cor);
 	font-size: 2rem;
 	text-decoration: none;
-	transition: 0.3s ease-in-out;
+	transition: 0.2s ease-in-out;
 	grid-column-start: 3;
+}
+
+.footer__icone--voltar::after{
+	content: "\f102";
+    font: var(--fa-font-solid);
+}
+
+.footer__icone--facebook::after{
+	content: "\f082";
+    font: var(--fa-font-brands);
+}
+
+.footer__icone--linkedin::after{
+	content: "\f08c";
+    font: var(--fa-font-brands);
+}
+
+.footer__icone--github::after{
+	content: "\f092";
+    font: var(--fa-font-brands);
 }
 
 .footer__icone:hover , .footer__icone:focus {

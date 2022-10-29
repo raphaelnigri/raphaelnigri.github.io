@@ -100,6 +100,21 @@
 	transition: 0.3s ease-in-out;
 }
 
+.icone--facebook::after{
+	content: "\f082";
+    font: var(--fa-font-brands);
+}
+
+.icone--linkedin::after{
+	content: "\f08c";
+    font: var(--fa-font-brands);
+}
+
+.icone--github::after{
+	content: "\f092";
+    font: var(--fa-font-brands);
+}
+
 .icone:focus , .icone:hover{
 	color: var(--branco);
 }

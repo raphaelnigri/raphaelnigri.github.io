@@ -62,9 +62,9 @@
 							<li><a class="ingles fade" href="projetos-en.html" aria-label="traduzir a página para inglês"></a></li>
 						</ul>
 						<ul class="container-icone">
-							<li><a class="icone" aria-label="Facebook" href="https://www.facebook.com/raphael.nigri.1" target="_blank" rel="noopener"><i class="fa-brands fa-square-facebook"></i></a></li>
-							<li><a class="icone" aria-label="Linkedin" href="https://www.linkedin.com/in/raphael-nigri/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a></li>
-							<li><a class="icone" aria-label="Github" href="https://github.com/raphaelnigri" target="_blank" rel="noopener"><i class="fa-brands fa-square-github"></i></i></a></li>
+							<li><a class="icone icone--facebook" aria-label="Facebook" href="https://www.facebook.com/raphael.nigri.1" target="_blank" rel="noopener"></a></li>
+							<li><a class="icone icone--linkedin" aria-label="Linkedin" href="https://www.linkedin.com/in/raphael-nigri/" target="_blank" rel="noopener"></a></li>
+							<li><a class="icone icone--github" aria-label="Github" href="https://github.com/raphaelnigri" target="_blank" rel="noopener"></a></li>
 						</ul>
 					</div>
 				</div>
@@ -82,60 +82,68 @@
 				</fieldset>
 			</section>
 			<section class="portfolio">
-				<article class="cartao webpage">
-					<h2 class="title h2--cartao">Nigriflix</h2>
-					<p class="built">Construido utilizando Java Script, Css e Html.</p>
-					<p class="legenda">Layout totalmente responsivo da página de um site para exibir videos do usuário ou assistir animes e filmes.</p>
-					<div class="cartao__imagem cartao__imagem--nigriflix" alt="Imagem do Cartão"></div>
-					<h3 class="h3--destaques">Destaques:</h3>
-					<ul class="destaques">
-						<li class="lista__item">Menu Lateral.</li>
-						<li class="lista__item">Menu hover com css (desktop).</li>
-						<li class="lista__item">Menu hamburguer com javascript.</li>
-						<li class="lista__item">Carrossel.</li>
-						<li class="lista__item">Duas versões de scrollbar customizadas no carrossel.</li>
-					</ul>
-					<ul class="cartao__botao__container">
-						<a class="cartao__botao" aria-label="Código fonte" href="https://github.com/raphaelnigri/nigriflix" target="_blank" rel="noopener">Código fonte</a>
-						<a class="cartao__botao" aria-label="Página" href="https://raphaelnigri.github.io/nigriflix/" target="_blank" rel="noopener">Teste ao vivo</a>
-					</ul>
-				</article>
-				<article class="cartao webpage">
-					<h2 class="title h2--cartao">Formulário</h2>
-					<p class="built">Construido utilizando Java Script, Regex, Css e Html.</p>
-					<p class="legenda">Layout totalmente responsivo de uma página de serviços com formulário.</p>
-					<div class="cartao__imagem cartao__imagem--form" alt="Imagem do Cartão"></div>
-					<h3 class="h3--destaques">Destaques:</h3>
-					<ul class="destaques">
-						<li class="lista__item">Menu hamburguer com apenas CSS (mobile)</li>
-						<li class="lista__item">Validação de formulário.</li>
-						<li class="lista__item">Confirmação do digito verificador do cpf e cnpj.</li>
-						<li class="lista__item">Mensagens de erro customizadas.</li>
-						<li class="lista__item">Radio inputs customizados.</li>
-						<li class="lista__item">Integração com api ViaCEP.</li>
-						<li class="lista__item">Preenchimento automático pelo CEP.</li>
-					</ul>
-					<ul class="cartao__botao__container">
-						<a class="cartao__botao" aria-label="Código fonte" href="https://github.com/raphaelnigri/contato" target="_blank" rel="noopener">Código fonte</a>
-						<a class="cartao__botao" aria-label="Página" href="https://raphaelnigri.github.io/contato/" target="_blank" rel="noopener">Teste ao vivo</a>
-					</ul>
-				</article>
+				<div class="portfolio__container" id="webpages">
+					<h2 class="title title--portfolio">Webpages</h2>
+					<article class="cartao">
+						<h2 class="title h2--cartao">Nigriflix</h2>
+						<p class="built">Construido utilizando Java Script, Css e Html.</p>
+						<p class="legenda">Layout totalmente responsivo da página de um site para exibir videos do usuário ou assistir animes e filmes.</p>
+						<div class="cartao__imagem cartao__imagem--nigriflix" alt="Imagem do Cartão"></div>
+						<h3 class="h3--destaques">Destaques:</h3>
+						<ul class="destaques">
+							<li class="lista__item">Menu Lateral.</li>
+							<li class="lista__item">Menu dropdown só com css (desktop).</li>
+							<li class="lista__item">Menu hamburguer com javascript (mobile).</li>
+							<li class="lista__item">Carrossel.</li>
+							<li class="lista__item">Scrollbar customizada para o carrossel.</li>
+						</ul>
+						<ul class="cartao__botao__container">
+							<a class="cartao__botao" aria-label="Código fonte" href="https://github.com/raphaelnigri/nigriflix" target="_blank" rel="noopener">Código fonte</a>
+							<a class="cartao__botao" aria-label="Página" href="https://raphaelnigri.github.io/nigriflix/" target="_blank" rel="noopener">Teste ao vivo</a>
+						</ul>
+					</article>
+					<article class="cartao">
+						<h2 class="title h2--cartao">Formulário</h2>
+						<p class="built">Construido utilizando Java Script, Regex, Css e Html.</p>
+						<p class="legenda">Layout totalmente responsivo de uma página de serviços com formulário.</p>
+						<div class="cartao__imagem cartao__imagem--form" alt="Imagem do Cartão"></div>
+						<h3 class="h3--destaques">Destaques:</h3>
+						<ul class="destaques">
+							<li class="lista__item">Menu hamburguer com apenas CSS (mobile).</li>
+							<li class="lista__item">Validação de formulário.</li>
+							<li class="lista__item">Confirmação do digito verificador do cpf e cnpj.</li>
+							<li class="lista__item">Mensagens de erro e inputs do tipo radio customizados.</li>
+							<li class="lista__item">Integração com api ViaCEP.</li>
+							<li class="lista__item">Preenchimento automático pelo CEP.</li>
+						</ul>
+						<ul class="cartao__botao__container">
+							<a class="cartao__botao" aria-label="Código fonte" href="https://github.com/raphaelnigri/contato" target="_blank" rel="noopener">Código fonte</a>
+							<a class="cartao__botao" aria-label="Página" href="https://raphaelnigri.github.io/contato/" target="_blank" rel="noopener">Teste ao vivo</a>
+						</ul>
+					</article>
+				</div>
+				<div class="portfolio__container off" id="utilities">
+					<h2 class="title title--portfolio">Utilidades</h2>
+				</div>
+				<div class="portfolio__container off" id="games">
+					<h2 class="title title--portfolio">Jogos</h2>
+				</div>
 				<a class="close" aria-label="Voltar ao topo" href="#top"><i class="fa-sharp fa-solid fa-angles-up"></i></a>
 			</section>
 		</main>
 		<footer>
 			<address id="address">
-				<p class="footer__contato"> Contato </p>
-				<p class="footer__contato"><a href="https://wa.me/21995550331" class="footer__link" target="_blank" rel="noopener"> Cel - Whatsapp: (21) 99555-0331</a></p>
-				<p class="footer__contato"><a href="mailto:link_nigri@hotmail.com" class="footer__link"> Email: link_nigri@hotmail.com</a></p>
+				<h3 class="footer__contato">Contato</h3>
+				<a href="https://wa.me/21995550331" class="footer__contato footer__contato--link" target="_blank" rel="noopener">Cel - Whatsapp: (21) 99555-0331</a>
+				<a href="mailto:link_nigri@hotmail.com" class="footer__contato footer__contato--link">Email: link_nigri@hotmail.com</a>
 				<article class="footer__icone__grid">
 					<ul class="footer__icone__container">
-						<li><a class="footer__icone" aria-label="Voltar ao topo" href="#top"><i class="fa-solid fa-angles-up"></i></a></li>
-						<li><a class="footer__icone" aria-label="Facebook" href="https://www.facebook.com/raphael.nigri.1" target="_blank" rel="noopener"><i class="fa-brands fa-square-facebook"></i></a></li>
-						<li><a class="footer__icone" aria-label="Linkedin" href="https://www.linkedin.com/in/raphael-nigri/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a></li>
-						<li><a class="footer__icone" aria-label="Github" href="https://github.com/raphaelnigri" target="_blank" rel="noopener"><i class="fa-brands fa-square-github"></i></i></a></li>
+						<li><a class="footer__icone footer__icone--voltar" aria-label="Voltar ao topo" href="#top"></a></li>
+						<li><a class="footer__icone footer__icone--facebook" aria-label="Facebook" href="https://www.facebook.com/raphael.nigri.1" target="_blank" rel="noopener"></a></li>
+						<li><a class="footer__icone footer__icone--linkedin" aria-label="Linkedin" href="https://www.linkedin.com/in/raphael-nigri/" target="_blank" rel="noopener"></a></li>
+						<li><a class="footer__icone footer__icone--github" aria-label="Github" href="https://github.com/raphaelnigri" target="_blank" rel="noopener"></a></li>
 					</ul>
-					<div class="footer__assinatura"> Raphael Nigri </div>
+					<div class="footer__assinatura">Raphael Nigri</div>
 				</article>
 			</address>
 		</footer>

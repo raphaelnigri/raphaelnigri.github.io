@@ -2,27 +2,23 @@ const labelPagina = document.getElementById('menu__paginas');
 const labelUtilidade = document.getElementById('menu__utilidades');
 const labelJogo = document.getElementById('menu__jogos');
 
-const paginas = document.querySelectorAll('.webpage');
-const utilidades = document.querySelectorAll('.utility');
-const jogos = document.querySelectorAll('.game');
+const paginas = document.getElementById('webpages');
+const utilidades = document.getElementById('utilities');
+const jogos = document.getElementById('games');
 
 const menu__projetos = document.querySelectorAll("input[type=radio]");
 
 function paginasON (){
-	if (paginas[0].classList.contains('off')) {
-		for(let i of paginas) {  
-			i.classList.remove('off');
-		}
+	if (paginas.classList.contains('off')) {
+		paginas.classList.remove('off');
 	};
     if (!labelPagina.classList.contains('apresentacao__menu__item--active')){
         labelPagina.classList.add('apresentacao__menu__item--active');
     }
 }
 function paginasOff(){
-	if (!paginas[0].classList.contains('off')) {
-		for(let i of paginas) {  
-			i.classList.add('off');
-		}
+	if (!paginas.classList.contains('off')) {
+		paginas.classList.add('off');
 	};
     if (labelPagina.classList.contains('apresentacao__menu__item--active')){
         labelPagina.classList.remove('apresentacao__menu__item--active');
@@ -30,20 +26,16 @@ function paginasOff(){
 }
 
 function utilidadeslON (){
-	if (utilidades[0].classList.contains('off')) {
-		for(let i of utilidades) {  
-			i.classList.remove('off');
-		}
+	if (utilidades.classList.contains('off')) {
+		utilidades.classList.remove('off');
 	};
     if (!labelUtilidade.classList.contains('apresentacao__menu__item--active')){
         labelUtilidade.classList.add('apresentacao__menu__item--active');
     }
 }
 function utilidadeslOff(){
-	if (!utilidades[0].classList.contains('off')) {
-		for(let i of utilidades) {  
-			i.classList.add('off');
-		}
+	if (!utilidades.classList.contains('off')) {
+		utilidades.classList.add('off');
 	};
     if (labelUtilidade.classList.contains('apresentacao__menu__item--active')){
         labelUtilidade.classList.remove('apresentacao__menu__item--active');
@@ -51,20 +43,16 @@ function utilidadeslOff(){
 }
 
 function jogosON (){
-	if (jogos[0].classList.contains('off')) {
-		for(let i of jogos) {  
-			i.classList.remove('off');
-		}
+	if (jogos.classList.contains('off')) {
+		jogos.classList.remove('off');
 	};
     if (!labelJogo.classList.contains('apresentacao__menu__item--active')){
         labelJogo.classList.add('apresentacao__menu__item--active');
     }
 }
 function jogosOff(){
-	if (!jogos[0].classList.contains('off')) {
-		for(let i of jogos) {  
-			i.classList.add('off');
-		}
+	if (!jogos.classList.contains('off')) {
+		jogos.classList.add('off');
 	};
     if (labelJogo.classList.contains('apresentacao__menu__item--active')){
         labelJogo.classList.remove('apresentacao__menu__item--active');
