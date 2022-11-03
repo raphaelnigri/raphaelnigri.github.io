@@ -40,22 +40,10 @@ em {
 	text-align: center;
 }
 
-.h1--quem-sou-eu{
-	margin: 20px 0 30px 0;
-}
-
 .h2--title{
 	border-top: 10px solid var(--border-cor);
 	margin: 40px 0 30px 0;
 	padding-top: 20px;
-}
-
-.h3--experiencia {
-	color: var(--titulo-cor);
-	font-size: 1.5rem;
-	font-weight: bold;	
-	margin: 30px 10px 0 10px;
-	text-align: left;
 }
 
 .fade{
@@ -66,5 +54,11 @@ em {
 @media screen and (max-width: 581px){
 	section {
 		width: 96%;
+	}
+}
+
+@media screen and (min-width: 1440px){
+	section {
+		width: 90%;
 	}
 }

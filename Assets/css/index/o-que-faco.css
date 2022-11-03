@@ -1,0 +1,11 @@
+@media screen and (min-width: 600px){
+	.o-que-faco{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		text-align: center;
+	}
+	.article--o-que-faco{
+		margin-inline: auto;
+		width: 80%;
+	}
+}
