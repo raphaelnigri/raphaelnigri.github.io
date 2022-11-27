@@ -1,6 +1,3 @@
-/*Desenvolvido por Raphael Nigri*/
-
-
 /*abrir e fechar menu lateral*/
 const botao = document.querySelector('.menu-lateral__button')
 const menu = document.querySelector('.menu-lateral__content')
@@ -13,6 +10,15 @@ botao.addEventListener('click', () => {
 	menu.classList.toggle('menu-lateral__content--ativo')
 	main.classList.toggle('fade')
 	footer.classList.toggle('fade')
+})
+
+main.addEventListener('click', () => {
+	if(menu.classList.contains('menu-lateral__content--ativo')){
+		botao.classList.toggle('active')
+		menu.classList.toggle('menu-lateral__content--ativo')
+		main.classList.toggle('fade')
+		footer.classList.toggle('fade')
+	}
 })
 
 /*fechar menu ao clicar em contatos*/
