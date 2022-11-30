@@ -70,6 +70,11 @@
     background-size: contain;
 }
 
+.cartao__imagem--character{
+    background: url(../../img/character.png) no-repeat center;
+    background-size: contain;
+}
+
 .h3--destaques{
     align-self: flex-end;
     color: var(--titulo-cor);
